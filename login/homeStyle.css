@@ -1,0 +1,293 @@
+*{
+	margin:0;
+	padding:0;
+	
+}
+
+.menu {
+	width: 100%;
+	min-height: 100vh;
+	color: #525252;
+}
+body {
+	background-color: #15141929;
+	font-family: 'Poppins', sans-serif;
+}
+nav {
+	background: rgb(7 217 192 / 36%);
+	display: flex;
+	min-height: 8vh;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+}
+.menuspan{
+	margin-left:40px;
+}
+.user-pic{
+	width:40px;
+	border-radius:50%;
+	cursor:pointer;
+	margin-right:40px;
+}
+.sub-menu-wrap{
+	position:absolute;
+	top:100%;
+	right:4%;
+	width:320px;
+	max-height:0px;
+	overflow:hidden;
+	transition:max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu{
+	max-height:400px;
+
+}
+
+.sub-menu{
+	background:#fff;
+	padding:20px;
+	margin:10px;
+}
+
+.user-info{
+	display:flex;
+	align-items:center;
+	
+}
+
+.user-info h3{
+	font-weight:500;
+	
+}
+.user-info img{
+	width:55px;
+	border-radius:50%;
+	margin-right:15px;
+	
+}
+.sub-menu hr{
+	border:0;
+	width:100%;
+	height:1px;
+	background:#ccc;
+	margin: 15px 0 10px;
+	
+}
+
+.sub-menu-link{
+	display:flex;
+	align-items:center;
+	text-decoration:none;
+	color:#525252;
+	margin:12px 0;
+}
+.sub-menu-link p{
+	width:100%;
+}
+.sub-menu-link img{
+	width:40px;
+	background:#d8f3f2;
+	border-radius:50%;
+	padding:8px;
+	margin-right:15px;
+}
+
+.sub-menu-link span{
+	font-size:20px;
+	transition:transform 0.5s;
+}
+.sub-menu-link:hover span{
+	transform:translateX(5px);
+}
+.sub-menu-link:hover p{
+	font-weight:600;
+}
+
+#form {
+	width: 400px;
+	align-items: center;
+	margin: auto;
+	margin-top: 20px;;
+	padding: 20px;
+	background-color: whitesmoke;
+	box-shadow: 10px 10px 8px #888888;
+	border-radius: 5px;
+	font-size: 12px;
+}
+.gender input{
+margin-left: 20px;
+margin-bottom:  20px;
+}
+
+#form h4 {
+	color: #0f2027;
+	text-align: center;
+}
+
+#form button {
+	padding: 10px;
+	margin-top: 10px;
+	width: 100%;
+	color: white;
+	background-color: rgb(41, 57, 194);
+	border: none;
+	border-radius: 4px;
+}
+
+.input-control {
+	display: flex;
+	flex-direction: column;
+	
+}
+
+
+.input-control input {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-size: 12px;
+	padding: 10px 0px;
+	width: 100%;
+}
+
+.input-control input:focus {
+	outline: 0;
+}
+
+.input-control.success input {
+	border-color: #09c372;
+}
+
+.input-control.error input {
+	border-color: #ff3860;
+}
+
+.input-control .error {
+	color: #ff3860;
+	font-size: 9px;
+	height: 13px;
+}
+
+#searchbyname{
+	background-color: #f8f9fa70;
+}
+
+
+
+.popup .content {
+	  color: black;
+ width: 300px;
+ height: 450px;
+ z-index: 2;
+ text-align: center;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-150%) scale(0);
+ padding: 20px;
+ border-radius: 20px;
+ background: #262626;
+ position: absolute;
+ box-shadow:  38px 38px 56px #1e1e1e, 
+             -25px -25px 38px #1e1e1e;
+ z-index: 1;
+}
+
+.link-info{
+	font-size:15px;
+	margin-top:10px;
+}
+.link-info a{
+	text-decoration:none;
+}
+
+  .text-center{
+	
+	color: #d5e8e0;
+	
+  }
+  .abc{
+	display: flex;
+	justify-content:space-between;
+	background-color: #262626;
+
+
+  }
+  .btn1{
+	color: #14c37a;
+	background-color: #262626;
+
+	
+	
+  }
+
+  #aaa,#bbb{
+	/* border: 2px solid rgb(7, 12, 1); */
+	margin-top: 3px;
+	padding: 5px;
+	/* box-shadow: #09c372;
+	box-shadow: 10px 10px 5px lightblue;*/
+	background-color: #ccddd0; 
+  }
+
+  /* #bbb{
+	background-color: #8bec16;
+  } */
+  
+#addon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-control input {
+    width: 80%;
+}
+
+.acc {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: #13dca7;
+	padding-left: 10px;
+}
+.acc label {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.acc a {
+	background-color: #0e631200;
+	color: #0f2027;
+	font-size: large;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-style: none;
+	font-weight: 400;
+	box-shadow: #09c372;
+	box-shadow: 10px 10px 5px rgb(178, 234, 172);
+
+  
+}
+
+.modal-content {
+    background-color: #0e6312;
+}
+
+.btnn{
+	background-color: cyan;
+    /* margin-left: 20px; */
+    height: 40px;
+    padding: 6px;
+	text-decoration: none;
+	border-radius: 7px;
+	color: #1e1e1e;
+	font-weight:bold;
+	font-style: italic;
+}
+
+#error{
+	color: #0e6312;
+	width: 500px;
+	margin: 200px;
+}
